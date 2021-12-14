@@ -3,33 +3,29 @@ import PersonalModal from "./personalModal"
 
 
 const Personal = ({ node, FadeInSection }) => {
+    useEffect(() => {
+        const str = document.getElementById('child' + node.index)
+
+        let text = ""
+        str.innerText.split('').forEach(char => {
+            if (char == " ") {
+                char = "&nbsp;"
+            }
+            text += `<span class="char">${char}</span>`
+        })
+        str.innerHTML = text
+        var clone = str.cloneNode(true);
+        document.getElementById('parent' + node.index).appendChild(clone);
+    }, [])
+
+
     const [closePersonal, setClosePersonal] = useState(true)
     const togglerPersonal = () => {
         setClosePersonal(prev => !prev)
     }
-    // let projectRef = useRef(null);
-    // const [projectId, setProjectId] = useState("")
-
-    // const selectProject = (event) => {
-
-    //     let id = event.currentTarget.id;
-    //     console.log(id);
-    //     if (id === projectRef.current.id) {
-    //         toggler.call(projectRef.current)
-    //     }
-    //     console.log(node.title)
-    // }
-    // useEffect(() => {
-    //     setProjectId(projectRef.current);
-    // // }, []);
-    // const selectProject = (event) => {
-    //     let id = event.target.id,
-    //         project = document.getElementById(`project` + id);
-    //     toggler.call(project);
-    // }
     return (
         <div>
-            <button id={node.index} style={{
+            <button id={`parent` + node.index} style={{
                 color: `var(--black)`,
                 textDecoration: `none`,
                 textTransform: `uppercase`,
@@ -39,7 +35,7 @@ const Personal = ({ node, FadeInSection }) => {
                 <h5 style={{
                     margin: 0,
                     fontSize: `7vw`
-                }} >
+                }} id={`child` + node.index}>
                     {node.title}
                 </h5>
             </button>

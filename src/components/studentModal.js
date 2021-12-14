@@ -23,8 +23,8 @@ const StudentModal = ({ node, closeStudent, togglerStudent, FadeInSection }) => 
                 <div style={{ display: `flex` }} >
                     <GatsbyImage image={getImage(node.image)} layout={node.image.gatsbyImageData.FULL_WIDTH} keys={node.image.title} alt={node.image.title} />
                     <div style={{ width: `30vw`, marginLeft: `2vw` }}>
-                        <p style={{ textTransform: `uppercase`, fontSize: `1vw`, margin: `0` }}>{node.period}</p>
                         <p style={{ fontSize: `1.5vw`, lineHeight: `2vw` }}>{node.description.description}</p>
+                        <p style={{ textTransform: `uppercase`, fontSize: `1vw`, margin: `0` }}>[{node.period}]</p>
                     </div>
                 </div>
             </FadeInSection>

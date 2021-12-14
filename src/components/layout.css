@@ -667,3 +667,475 @@ pre tt:after {
   transform: none;
   visibility: visible;
 }
+
+/* Project link effect 10*/
+#parent10 {
+  position: relative;
+  overflow: hidden;
+}
+
+#child10:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#child10 span {
+  display: inline-block;
+  overflow: hidden;
+  pointer-events: none;
+}
+#child10 span:nth-child(1) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#child10 span:nth-child(2) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 20ms;
+}
+
+#child10 span:nth-child(3) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 40ms;
+}
+
+#child10 span:nth-child(4) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 60ms;
+}
+
+#child10 span:nth-child(5) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 80ms;
+}
+
+#child10 span:nth-child(6) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 100ms;
+}
+
+#child10 span:nth-child(7) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 120ms;
+}
+
+#child10 span:nth-child(8) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 140ms;
+}
+
+#child10 span:nth-child(9) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 160ms;
+}
+
+#child10 span:nth-child(10) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 180ms;
+}
+#child10 span:nth-child(11) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+}
+#child10 span:nth-child(12) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 220ms;
+}
+#child10 span:nth-child(13) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 240ms;
+}
+#child10 span:nth-child(14) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 260ms;
+}
+#child10 span:nth-child(15) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 280ms;
+}
+#child10 span:nth-child(16) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 300ms;
+}
+#child10 span:nth-child(17) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 320ms;
+}
+#child10 span:nth-child(18) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 340ms;
+}
+#child10 span:nth-child(19) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 360ms;
+}
+
+#child10:last-child span {
+  transform: translate3d(0, 101%, 0);
+}
+
+#parent10:hover #child10:first-child span {
+  transform: translate3d(0, -101%, 0);
+}
+
+#parent10:hover #child10:last-child span {
+  transform: translate3d(0, 0, 0);
+}
+#child10:last-child span {
+  transform: translate3d(0, 101%, 0);
+}
+
+#parent10:hover #child10:first-child span {
+  transform: translate3d(0, -101%, 0);
+}
+
+#parent10:hover #child10:last-child span {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Project link effect 1 */
+#parent1 {
+  position: relative;
+  overflow: hidden;
+}
+
+#child1:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#child1 span {
+  display: inline-block;
+  overflow: hidden;
+  pointer-events: none;
+}
+#child1 span:nth-child(1) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#child1 span:nth-child(2) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 20ms;
+}
+
+#child1 span:nth-child(3) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 40ms;
+}
+
+#child1 span:nth-child(4) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 60ms;
+}
+
+#child1 span:nth-child(5) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 80ms;
+}
+
+#child1 span:nth-child(6) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 100ms;
+}
+
+#child1 span:nth-child(7) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 120ms;
+}
+
+#child1 span:nth-child(8) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 140ms;
+}
+
+#child1 span:nth-child(9) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 160ms;
+}
+
+#child1 span:nth-child(10) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 180ms;
+}
+#child1 span:nth-child(11) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+}
+#child1 span:nth-child(12) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 220ms;
+}
+#child1 span:nth-child(13) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 240ms;
+}
+#child1 span:nth-child(14) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 260ms;
+}
+#child1 span:nth-child(15) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 280ms;
+}
+#child1 span:nth-child(16) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 300ms;
+}
+#child1 span:nth-child(17) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 320ms;
+}
+#child1 span:nth-child(18) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 340ms;
+}
+#child1 span:nth-child(19) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 360ms;
+}
+
+#child1:last-child span {
+  transform: translate3d(0, 101%, 0);
+}
+
+#parent1:hover #child1:first-child span {
+  transform: translate3d(0, -101%, 0);
+}
+
+#parent1:hover #child1:last-child span {
+  transform: translate3d(0, 0, 0);
+}
+#child1:last-child span {
+  transform: translate3d(0, 101%, 0);
+}
+
+#parent1:hover #child1:first-child span {
+  transform: translate3d(0, -101%, 0);
+}
+
+#parent1:hover #child1:last-child span {
+  transform: translate3d(0, 0, 0);
+}
+
+/* Project link effect 2*/
+#parent2 {
+  position: relative;
+  overflow: hidden;
+}
+
+#child2:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#child2 span {
+  display: inline-block;
+  overflow: hidden;
+  pointer-events: none;
+}
+#child2 span:nth-child(1) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#child2 span:nth-child(2) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 20ms;
+}
+
+#child2 span:nth-child(3) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 40ms;
+}
+
+#child2 span:nth-child(4) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 60ms;
+}
+
+#child2 span:nth-child(5) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 80ms;
+}
+
+#child2 span:nth-child(6) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 100ms;
+}
+
+#child2 span:nth-child(7) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 120ms;
+}
+
+#child2 span:nth-child(8) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 140ms;
+}
+
+#child2 span:nth-child(9) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 160ms;
+}
+
+#child2 span:nth-child(10) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 180ms;
+}
+#child2 span:nth-child(11) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+}
+#child2 span:nth-child(12) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 220ms;
+}
+#child2 span:nth-child(13) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 240ms;
+}
+#child2 span:nth-child(14) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 260ms;
+}
+#child2 span:nth-child(15) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 280ms;
+}
+#child2 span:nth-child(16) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 300ms;
+}
+#child2 span:nth-child(17) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 320ms;
+}
+#child2 span:nth-child(18) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 340ms;
+}
+#child2 span:nth-child(19) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 360ms;
+}
+#child2 span:nth-child(20) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 380ms;
+}
+#child2 span:nth-child(21) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 400ms;
+}
+#child2 span:nth-child(22) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 420ms;
+}
+#child2 span:nth-child(23) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 440ms;
+}
+
+#child2:last-child span {
+  transform: translate3d(0, 101%, 0);
+}
+
+#parent2:hover #child2:first-child span {
+  transform: translate3d(0, -101%, 0);
+}
+
+#parent2:hover #child2:last-child span {
+  transform: translate3d(0, 0, 0);
+}
+#child2:last-child span {
+  transform: translate3d(0, 101%, 0);
+}
+
+#parent2:hover #child2:first-child span {
+  transform: translate3d(0, -101%, 0);
+}
+
+#parent2:hover #child2:last-child span {
+  transform: translate3d(0, 0, 0);
+}
+/* Project link effect 3*/
+#parent3 {
+  position: relative;
+  overflow: hidden;
+}
+
+#child3:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#child3 span {
+  display: inline-block;
+  overflow: hidden;
+  pointer-events: none;
+}
+#child3 span:nth-child(1) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+#child3 span:nth-child(2) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 20ms;
+}
+
+#child3 span:nth-child(3) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 40ms;
+}
+
+#child3 span:nth-child(4) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 60ms;
+}
+
+#child3 span:nth-child(5) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 80ms;
+}
+
+#child3 span:nth-child(6) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 100ms;
+}
+
+#child3 span:nth-child(7) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 120ms;
+}
+
+#child3 span:nth-child(8) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 140ms;
+}
+
+#child3 span:nth-child(9) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 160ms;
+}
+
+#child3 span:nth-child(10) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 180ms;
+}
+#child3 span:nth-child(11) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 200ms;
+}
+#child3 span:nth-child(12) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 220ms;
+}
+#child3 span:nth-child(13) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 240ms;
+}
+#child3 span:nth-child(14) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 260ms;
+}
+#child3 span:nth-child(15) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 280ms;
+}
+#child3 span:nth-child(16) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 300ms;
+}
+#child3 span:nth-child(17) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 320ms;
+}
+#child3 span:nth-child(18) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 340ms;
+}
+#child3 span:nth-child(19) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 360ms;
+}
+#child3 span:nth-child(20) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 380ms;
+}
+#child3 span:nth-child(21) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 400ms;
+}
+#child3 span:nth-child(22) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 420ms;
+}
+#child3 span:nth-child(23) {
+  transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 440ms;
+}
+
+#child3:last-child span {
+  transform: translate3d(0, 101%, 0);
+}
+
+#parent3:hover #child3:first-child span {
+  transform: translate3d(0, -101%, 0);
+}
+
+#parent3:hover #child3:last-child span {
+  transform: translate3d(0, 0, 0);
+}
+#child3:last-child span {
+  transform: translate3d(0, 101%, 0);
+}
+
+#parent3:hover #child3:first-child span {
+  transform: translate3d(0, -101%, 0);
+}
+
+#parent3:hover #child3:last-child span {
+  transform: translate3d(0, 0, 0);
+}
+
+.line.is-visible {
+  display: block;
+  position: absolute;
+  top: 00%;
+  left: -5vw;
+  border-left: 1px solid var(--grey);
+  height: 100vw;
+  text-align: center;
+  animation: line 2.2s linear forwards;
+}
+@keyframes line {
+  from {
+    top: 0%;
+    height: 5%;
+  }
+  to {
+    top: 0%;
+    height: 100%;
+  }
+}

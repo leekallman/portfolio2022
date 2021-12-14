@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Contact = () => {
     return (
@@ -21,18 +21,19 @@ const Contact = () => {
                     fontSize: `10vh`
                 }}>
                     <ul style={{ listStyle: `none`, marginLeft: `0` }}>
-                        <li><a
+                        <li id="parentLinkedin"><a
                             to="https://linkedin.com/in/lisaleekallman"
                             style={{
                                 color: `var(--black)`,
                                 textDecoration: `none`,
                                 textTransform: `uppercase`,
                             }}
+                            id="childLinkedin"
                         >
                             LinkedIn
                         </a>
                         </li>
-                        <li>
+                        <li id="parentEmail">
                             <a
                                 href="mailto: lisaleekallman@gmail.com"
                                 style={{
@@ -40,6 +41,7 @@ const Contact = () => {
                                     textDecoration: `none`,
                                     textTransform: `uppercase`,
                                 }}
+                                id="childEmail"
                             >
                                 Email
                             </a>
