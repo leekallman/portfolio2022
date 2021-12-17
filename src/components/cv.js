@@ -1,42 +1,45 @@
-import React, {useState, useRef, useEffect} from 'react';
+import React, { useState, useRef, useEffect } from 'react';
+import { StaticImage } from "gatsby-plugin-image"
 
 const Cv = ({ FadeInSection }) => {
     function GrowLine(props) {
         const [isVisible, setVisible] = useState(false);
         const lineRef = useRef();
         useEffect(() => {
-          const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-              if (entry.isIntersecting) {
-                setVisible(entry.isIntersecting);
-              }
-            })
-          });
-          observer.observe(lineRef.current);
-          return () => observer.unobserve(lineRef.current)
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        setVisible(entry.isIntersecting);
+                    }
+                })
+            });
+            observer.observe(lineRef.current);
+            return () => observer.unobserve(lineRef.current)
         }, []);
         return (
-    <div
-      className={`line ${isVisible ? 'is-visible' : ''}`}
-      ref={lineRef}
-    >
-    </div>
-  );
+            <div
+                className={`line ${isVisible ? 'is-visible' : ''}`}
+                ref={lineRef}
+            >
+            </div>
+        );
     }
 
     return (
         <div style={{
             margin: `0 auto`,
-            padding: `0 4vh`,
+            padding: `0 2vh`,
         }}>
-            <div style={{
-                width: `50%`,
-                marginTop: `10vh`,
-                marginLeft: `20vh`,
-                marginBottom: `40vh`
-            }}>
-                <div>
-                    
+            <div className="cv">
+                <StaticImage
+                    src="../images/cv.svg"
+                    quality={95}
+                    formats={["auto", "webp", "avif"]}
+                    alt="cv download button"
+                    className="cvImg"
+                />
+                <div className="cvText">
+                <div className="education">
                     <FadeInSection>
                         <h3>2020-2022 | Hyper Island</h3>
                     </FadeInSection>
@@ -44,14 +47,14 @@ const Cv = ({ FadeInSection }) => {
                         <h4>Diploma Frontend Developer</h4>
                     </FadeInSection>
                 </div>
-                
-                <div style={{ marginLeft: `20vh`,position:`relative` }}>
-                <GrowLine></GrowLine>
+
+                <div className="employments">
+                    <GrowLine></GrowLine>
                     <div><FadeInSection>
-                        <h3>2019-2020 | Tort Magazine</h3>
+                        <h3>2019-2021 | Freelance</h3>
                     </FadeInSection>
                         <FadeInSection>
-                            <h4>Assistant Chief Editor, Web Designer</h4>
+                            <h4>Web Developer/Designer</h4>
                         </FadeInSection>
                     </div>
                     <div><FadeInSection>
@@ -108,6 +111,7 @@ const Cv = ({ FadeInSection }) => {
                         <h4>BSc Civil Engineering</h4>
                     </FadeInSection>
                 </div>
+            </div>
             </div>
         </div>
     );

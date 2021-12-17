@@ -3,24 +3,10 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import cancel from '../images/close.png'
 
 const PersonalModal = ({ node, closePersonal, togglerPersonal, FadeInSection }) => {
-    // const [animate, setAnimate] = useState(false);
-
-    // useEffect(() => {
-    //     if (window.sessionStorage.getItem("firstLoadDone") === null) {
-    //         setAnimate(true)
-
-    //         window.sessionStorage.setItem("firstLoadDone", 1)
-    //     }
-    //     else {
-    //         setAnimate(false)
-    //     }
-    // })
-
     return (
         <div style={{
             height: `100vh`,
             margin: `0 auto`,
-            padding: `0 4vh`,
             background: `var(--black)`,
             color: `var(--grey)`,
             position: `fixed`,
@@ -28,36 +14,36 @@ const PersonalModal = ({ node, closePersonal, togglerPersonal, FadeInSection }) 
             right: `0`,
             top: `0`,
             transition: `opacity 0.5s ease-in-out`,
-        }} className={closePersonal ? 'hide' : 'show'}>
+        }} className={`modal ${closePersonal ? 'hide' : 'show'}`}>
             <FadeInSection>
-                <h2 style={{ fontSize: `8vw`, textTransform: `uppercase`, color: `var(--red)` }}>{node.type}</h2>
+                <h2 className="modalTitle" style={{textTransform: `uppercase`, color: `var(--red)` }}>{node.type}</h2>
             </FadeInSection>
             <FadeInSection>
-                <div style={{ display: `flex` }} >
-                    <GatsbyImage image={getImage(node.image)} layout={node.image.gatsbyImageData.FULL_WIDTH} keys={node.image.title} alt={node.image.title} />
-                    <div style={{width: `30vw`, marginLeft: `2vw`}}>
-                    <p style={{fontSize:`1.5vw`, lineHeight:`2vw`}}>{node.description.description}</p>
-                    <p style={{textTransform: `uppercase`, fontSize:`1vw`, margin:`0`}}>[{node.period}]</p>
-                    </div>
+                <GatsbyImage className="projectImg" image={getImage(node.image)} layout={node.image.gatsbyImageData.FULL_WIDTH} keys={node.image.title} alt={node.image.title} />
+            </FadeInSection>
+            <FadeInSection>
+                <h3 className="modalHeading">{node.title}</h3>
+            </FadeInSection>
+            <FadeInSection>
+                <div className="modalText">
+                    <p className="modalDescription" >{node.description.description}</p>
+                    <p className="modalPeriod">[{node.period}]</p>
                 </div>
             </FadeInSection>
             <FadeInSection>
-                <h3 style={{marginTop:`1vw`}}>{node.title}</h3>
-            </FadeInSection>
-            <FadeInSection>
-            <div style={{display: 'flex', position: `absolute`, bottom: `2vw`, right: `21vw`}}>
-            <a href={node.url} aria-label="link to project build" style={{border:`1px solid var(--red)`, borderRadius:`30px`, padding:`2px 20px`, fontSize:`1vw`, marginRight:`1vw`}}>
-                web
-            </a>
-            <a href={node.github} aria-label="link to github" style={{border:`1px solid var(--red)`, borderRadius:`30px`, padding:`2px 20px`, fontSize:`1vw`}}>
-                github
-            </a>
+            <div className="modalLinks">
+                <a href={node.url} aria-label="link to project build">
+                    website
+                </a>
+                <a href={node.github} aria-label="link to github">
+                    github
+                </a>
             </div>
             </FadeInSection>
             <FadeInSection>
-                <button aria-label="Close" onClick={togglerPersonal} style={{ position: `absolute`, bottom: `2vw`, right: `2vw` }}>
-                    <img style={{ width: `7vw` }} src={cancel} alt="close-button" />
-                </button>
+            <button className="closeButton" aria-label="Close" onClick={togglerPersonal}>
+                    <img src={cancel} alt="close-button" />
+            </button>
             </FadeInSection>
         </div>
     );

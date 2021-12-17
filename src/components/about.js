@@ -1,88 +1,120 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
 
-// function FadeInSection(props) {
-//         const [isVisible, setVisible] = useState(false);
-//         const domRef = useRef();
-//         useEffect(() => {
-//             const observer = new IntersectionObserver(entries => {
-//                 entries.forEach(entry => setVisible(entry.isIntersecting));
-//             });
-//             observer.observe(domRef.current);
-//         }, []);
-//         return (
-//             <div
-//                 className={`fade-in-section ${isVisible ? 'is-visible' : ''}`}
-//                 ref={domRef}
-//             >
-//                 {props.children}
-//             </div>
-//         );
-//     }
 const About = ({ FadeInSection }) => {
     return (
-        <div style={{
-            height: `100vh`,
-            margin: `0 auto`,
-            padding: `0 5vh`,
-            display: `flex`
-        }}>
+        <div className="about">
             <StaticImage
                 src="../images/portrait.jpg"
-                width={500}
                 quality={95}
                 formats={["auto", "webp", "avif"]}
                 alt="Portrait of Lisa Lee"
-                imgStyle={{}}
-                style={{
-                    height: `200px`,
-                    marginLeft: `70vh`,
-                    marginTop: `30vh`,
-                    marginRight: `1.0875rem`
-                }}
+                className="profileImg"
             />
-            <div style={{
-                fontSize: `3vh`,
-                marginTop: `30vh`
-            }}>
+            <div className="aboutText">
                 <FadeInSection >
-                    <span>Since I started coding 2019, I have been involved in </span>
+                    <span>At Hyper Island, I have had </span> 
                 </FadeInSection>
                 <FadeInSection >
-                    <span>starting a paper print magazine, started the </span>
+                    <span>the opportunity to learn from </span> 
                 </FadeInSection>
                 <FadeInSection >
-                    <span>Southside 19 association that arrange community markets in Stockholm </span>
+                    <span>industry professionals, gain </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>suburbs and finally(?) decided to change career.</span>
+                    <span>relevant knowledge and experience </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>My primarily focus now is to aquire more backend</span>
+                    <span>of the latest technologies and </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>knowledge and experience, to become a fullstack developer that can xxx</span>
+                    <span>work in agile development teams </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>With my background within sustainability,  I intend to continue</span>
+                    <span>for real clients. I have acquired </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span> to create products and solutions that have a positive impact </span>
+                    <span>basic knowledge in HTML, CSS, </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>on people and the future. I believe that success is derived </span>
+                    <span>JavaScript, React and Node.js, </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>from collaborative teams where inclusiveness, equality and individual</span>
+                    <span>been introduced to UX/UI-design, </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>growth form the foundation.</span>
+                    <span>accessibility, working with </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>databases, APIs and TDD etc. </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>In addition, I have taken every </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>chance to challenge myself </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>and my creative ability by </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>trying new frameworks and </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>libraries to add exciting </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>elements in my design. </span>
+                </FadeInSection>
+                <br />
+                <br />
+                <FadeInSection >
+                    <span>Parallel with my studies, </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>I have worked on side projects </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>such as being involved in starting </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>a magazine and arranging community </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>markets in three of Stockholm's </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>southern suburbs. </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>Knowing that what I do will leave </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>a positive impact on people and </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>the future is a strong motivating </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>factor for me and is something I </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>intend to continue doing. </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>From Hyper I bring with me valuable </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>insights and tools to foster team </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>development and self-leadership.</span>
                 </FadeInSection>
             </div>
-        </div>
+        </div >
     );
 }
 
 export default About;
+
+

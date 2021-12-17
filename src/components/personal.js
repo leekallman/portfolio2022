@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import PersonalModal from "./personalModal"
 
 
@@ -24,7 +24,7 @@ const Personal = ({ node, FadeInSection }) => {
         setClosePersonal(prev => !prev)
     }
     return (
-        <div>
+        <div className="personal" >
             <button id={`parent` + node.index} style={{
                 color: `var(--black)`,
                 textDecoration: `none`,
@@ -32,10 +32,7 @@ const Personal = ({ node, FadeInSection }) => {
                 border: `none`,
                 background: `none`
             }} onClick={togglerPersonal}>
-                <h5 style={{
-                    margin: 0,
-                    fontSize: `7vw`
-                }} id={`child` + node.index}>
+                <h5 id={`child` + node.index}>
                     {node.title}
                 </h5>
             </button>
