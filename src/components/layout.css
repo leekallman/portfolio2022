@@ -690,6 +690,13 @@ pre tt:after {
   position: absolute;
   top: 0;
   left: 0;
+  color: var(--red);
+}
+
+#child1:last-child,
+#child2:last-child,
+#child3:last-child {
+  color: var(--grey);
 }
 
 #child10 span,
@@ -806,7 +813,9 @@ pre tt:after {
 #child2 span:nth-child(10),
 #child3 span:nth-child(10),
 #child11 span:nth-child(10),
-#child12 span:nth-child(10) {
+#child12 span:nth-child(10),
+#childLinkedin span:nth-child(10),
+#childEmail span:nth-child(10) {
   transition: transform 900ms cubic-bezier(0.19, 1, 0.22, 1) 180ms;
 }
 #child10 span:nth-child(11),
@@ -995,13 +1004,11 @@ pre tt:after {
 #parentLinkedin:hover #childLinkedin:first-child span,
 #parentEmail:hover #childEmail:first-child span {
   transform: translate3d(0, 0, 0);
-  color: var(--red);
 }
-#parent1:hover #child1:last-child span,
-#parent2:hover #child2:last-child span,
-#parent3:hover #child3:last-child span {
-  color: var(--grey);
-}
+/* #parentLinkedin:hover #childLinkedin:first-child span,
+#parentEmail:hover #childEmail:first-child span {
+  transition: color 0.5s ease-in;
+} */
 
 .line.is-visible {
   display: block;
@@ -1187,6 +1194,48 @@ pre tt:after {
   width: 5vh;
   float: right;
 }
+.heroAnimation,
+.dynamic,
+.static {
+  overflow: hidden;
+}
+.heroAnimation {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+.heroAnimation p {
+  margin: 0;
+  padding: 0;
+}
+
+.dynamic,
+.dynamic p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  transition: all ease 0.7s;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.dynamic {
+  background-color: var(--red);
+}
+.static {
+  background-color: var(--grey);
+  color: var(--red);
+}
+.heroAnimation:hover .dynamic {
+  transform: translateY(100%);
+}
+.heroAnimation:hover .dynamic p {
+  transform: translateY(-100%);
+}
 
 @media only screen and (min-width: 450px) {
   .heroHeading {
@@ -1332,7 +1381,8 @@ pre tt:after {
   .about {
     margin: 10vh auto;
   }
-  .projectsHeading {
+  .projectsHeading,
+  .contactscHeading {
     font-size: 1.8vw;
   }
   .profileImg {

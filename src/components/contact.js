@@ -16,7 +16,7 @@ const Contact = () => {
                 text += `<span class="char">${char}</span>`
             })
             str.innerHTML = text
-            var clone = str.cloneNode(true);
+            const clone = str.cloneNode(true);
             str.parentNode.appendChild(clone);
         })
 
@@ -26,38 +26,34 @@ const Contact = () => {
             background: `var(--grey)`,
             color: `var(--black)`
         }}>
-            <div
-                style={{
-                    margin: `0 auto`,
-                }}
-            >
+            <div style={{ margin: `0 auto`}}>
                 <h2 className="contactscHeading">Contact</h2>
-                    <a
-                        to="https://linkedin.com/in/lisaleekallman"
+                <ul style={{listStyle:`none`, marginLeft: `0`}}>
+                    <li>
+                    <a href="https://linkedin.com/in/lisaleekallman" target="_blank"
                         style={{
                             color: `var(--black)`,
                             textDecoration: `none`,
                             textTransform: `uppercase`,
-                            display: `block`
-                        }}
-                        id="parentLinkedin">
-                        <h5 id="childLinkedin">
-                        LinkedIn
-                        </h5>
+                            display: `inline-block`
+                        }} id="parentLinkedin">
+                        <h5 id="childLinkedin">LinkedIn</h5>
                     </a>
-                    <a
-                        href="mailto: lisaleekallman@gmail.com"
+                    </li>
+                    <li>
+                    <a href="mailto: lisaleekallman@gmail.com"
                         style={{
                             color: `var(--black)`,
                             textDecoration: `none`,
                             textTransform: `uppercase`,
-                            display: `block`
+                            display: `inline-block`
                         }} id="parentEmail">
-                            
-                            <h5 id="childEmail">
-                                Email
-                            </h5>
+                            <h5 id="childEmail">Email</h5>
                     </a>
+                    </li>
+                </ul>
+
+                   
             </div>
         </div>
     );

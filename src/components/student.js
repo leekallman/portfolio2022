@@ -29,7 +29,7 @@ const Student = ({ node, FadeInSection }) => {
                 textTransform: `uppercase`,
                 border: `none`,
                 background: `none`
-            }} onClick={togglerStudent} id={`parent` + node.index} data-split-parent2>
+            }} onClick={togglerStudent} id={`parent` + node.index}>
                 <h5 id={`child` + node.index}>
                     {node.title}
                 </h5>

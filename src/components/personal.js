@@ -24,7 +24,7 @@ const Personal = ({ node, FadeInSection }) => {
         setClosePersonal(prev => !prev)
     }
     return (
-        <div className="personal" >
+        <div className="personal">
             <button id={`parent` + node.index} style={{
                 color: `var(--black)`,
                 textDecoration: `none`,
@@ -32,9 +32,7 @@ const Personal = ({ node, FadeInSection }) => {
                 border: `none`,
                 background: `none`
             }} onClick={togglerPersonal}>
-                <h5 id={`child` + node.index}>
-                    {node.title}
-                </h5>
+                <h5 id={`child` + node.index}>{node.title}</h5>
             </button>
             <PersonalModal
                 node={node}
