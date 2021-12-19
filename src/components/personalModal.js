@@ -1,8 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import cancel from '../images/close.png'
+import { useContext } from "react";
+import { MouseContext } from "../context/mouse-context";
 
 const PersonalModal = ({ node, closePersonal, togglerPersonal, FadeInSection }) => {
+    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     return (
         <div style={{
             height: `100vh`,
@@ -16,10 +19,11 @@ const PersonalModal = ({ node, closePersonal, togglerPersonal, FadeInSection }) 
             transition: `opacity 0.5s ease-in-out`,
         }} className={`modal ${closePersonal ? 'hide' : 'show'}`}>
             <FadeInSection>
-                <h2 className="modalTitle" style={{textTransform: `uppercase`, color: `var(--red)` }}>{node.type}</h2>
+                <h2 className="modalTitle" style={{ textTransform: `uppercase`, color: `var(--red)` }}>{node.type}</h2>
             </FadeInSection>
             <FadeInSection>
-                <GatsbyImage className="projectImg" image={getImage(node.image)} layout={node.image.gatsbyImageData.FULL_WIDTH} keys={node.image.title} alt={node.image.title} />
+                <GatsbyImage className="projectImg" image={getImage(node.image)} layout={node.image.gatsbyImageData.FULL_WIDTH} keys={node.image.title} alt={node.image.title} onMouseEnter={() => cursorChangeHandler("hovered")}
+                    onMouseLeave={() => cursorChangeHandler("")} />
             </FadeInSection>
             <FadeInSection>
                 <h3 className="modalHeading">{node.title}</h3>
@@ -31,19 +35,22 @@ const PersonalModal = ({ node, closePersonal, togglerPersonal, FadeInSection }) 
                 </div>
             </FadeInSection>
             <FadeInSection>
-            <div className="modalLinks">
-                <a href={node.url} aria-label="link to project build">
-                    website
-                </a>
-                <a href={node.github} aria-label="link to github">
-                    github
-                </a>
-            </div>
+                <div className="modalLinks">
+                    <a href={node.url} aria-label="link to project build" onMouseEnter={() => cursorChangeHandler("hovered")}
+                        onMouseLeave={() => cursorChangeHandler("")}>
+                        website
+                    </a>
+                    <a href={node.github} aria-label="link to github" onMouseEnter={() => cursorChangeHandler("hovered")}
+                        onMouseLeave={() => cursorChangeHandler("")}>
+                        github
+                    </a>
+                </div>
             </FadeInSection>
             <FadeInSection>
-            <button className="closeButton" aria-label="Close" onClick={togglerPersonal}>
+                <button className="closeButton" aria-label="Close" onClick={togglerPersonal} onMouseEnter={() => cursorChangeHandler("hovered")}
+                    onMouseLeave={() => cursorChangeHandler("")}>
                     <img src={cancel} alt="close-button" />
-            </button>
+                </button>
             </FadeInSection>
         </div>
     );

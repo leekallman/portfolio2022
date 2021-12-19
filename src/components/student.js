@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react'
 import StudentModal from "./studentModal"
+import { useContext } from "react";
+import { MouseContext } from "../context/mouse-context";
 
 
 const Student = ({ node, FadeInSection }) => {
+    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     useEffect(() => {
         const str = document.getElementById('child' + node.index)
         let text = ""
@@ -29,7 +32,8 @@ const Student = ({ node, FadeInSection }) => {
                 textTransform: `uppercase`,
                 border: `none`,
                 background: `none`
-            }} onClick={togglerStudent} id={`parent` + node.index}>
+            }} onClick={togglerStudent} id={`parent` + node.index} onMouseEnter={() => cursorChangeHandler("hovered")}
+                onMouseLeave={() => cursorChangeHandler("")}>
                 <h5 id={`child` + node.index}>
                     {node.title}
                 </h5>

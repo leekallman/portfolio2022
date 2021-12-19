@@ -1,7 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { StaticImage } from "gatsby-plugin-image"
+import { useContext } from "react";
+import { MouseContext } from "../context/mouse-context";
 
 const Cv = ({ FadeInSection }) => {
+    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     function GrowLine(props) {
         const [isVisible, setVisible] = useState(false);
         const lineRef = useRef();
@@ -38,6 +41,8 @@ const Cv = ({ FadeInSection }) => {
                         formats={["auto", "webp", "avif"]}
                         alt="cv download button"
                         className="cvImg"
+                        onMouseEnter={() => cursorChangeHandler("hovered")}
+                        onMouseLeave={() => cursorChangeHandler("")}
                     />
                 </a>
                 <div className="cvText">

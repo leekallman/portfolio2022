@@ -1,6 +1,9 @@
 import React, { useEffect } from 'react';
+import { useContext } from "react";
+import { MouseContext } from "../context/mouse-context";
 
 const Contact = () => {
+    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     useEffect(() => {
 
         const linkedin = document.getElementById('childLinkedin');
@@ -36,7 +39,9 @@ const Contact = () => {
                             textDecoration: `none`,
                             textTransform: `uppercase`,
                             display: `inline-block`
-                        }} id="parentLinkedin">
+                        }} id="parentLinkedin"
+                        onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}>
                         <h5 id="childLinkedin">LinkedIn</h5>
                     </a>
                     </li>
@@ -47,7 +52,9 @@ const Contact = () => {
                             textDecoration: `none`,
                             textTransform: `uppercase`,
                             display: `inline-block`
-                        }} id="parentEmail">
+                        }} id="parentEmail"
+                        onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}>
                             <h5 id="childEmail">Email</h5>
                     </a>
                     </li>

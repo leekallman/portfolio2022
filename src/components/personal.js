@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import PersonalModal from "./personalModal"
+import { useContext } from "react";
+import { MouseContext } from "../context/mouse-context";
 
 
 const Personal = ({ node, FadeInSection }) => {
+    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     useEffect(() => {
         const str = document.getElementById('child' + node.index)
 
@@ -31,7 +34,8 @@ const Personal = ({ node, FadeInSection }) => {
                 textTransform: `uppercase`,
                 border: `none`,
                 background: `none`
-            }} onClick={togglerPersonal}>
+            }} onClick={togglerPersonal} onMouseEnter={() => cursorChangeHandler("hovered")}
+                onMouseLeave={() => cursorChangeHandler("")}>
                 <h5 id={`child` + node.index}>{node.title}</h5>
             </button>
             <PersonalModal

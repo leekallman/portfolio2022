@@ -1,7 +1,10 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
+import { useContext } from "react";
+import { MouseContext } from "../context/mouse-context";
 
 const About = ({ FadeInSection }) => {
+    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
     return (
         <div className="about">
             <StaticImage
@@ -10,13 +13,15 @@ const About = ({ FadeInSection }) => {
                 formats={["auto", "webp", "avif"]}
                 alt="Portrait of Lisa Lee"
                 className="profileImg"
+                onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}
             />
             <div className="aboutText">
                 <FadeInSection >
-                    <span>At Hyper Island, I have had </span> 
+                    <span>At Hyper Island, I have had </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>the opportunity to learn from </span> 
+                    <span>the opportunity to learn from </span>
                 </FadeInSection>
                 <FadeInSection >
                     <span>industry professionals, gain </span>
