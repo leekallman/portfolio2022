@@ -1,5 +1,5 @@
 import * as React from "react"
-import App from "./App";
+import App from "./app";
 import Seo from "../components/seo"
 import Layout from "../components/layout"
 import MouseContextProvider from "../context/mouse-context";

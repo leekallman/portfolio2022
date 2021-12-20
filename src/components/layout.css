@@ -1206,6 +1206,7 @@ pre tt:after {
   margin: 0;
   padding: 0;
   display: inline-block;
+  width: fit-content;
 }
 .heroAnimation p {
   margin: 0;

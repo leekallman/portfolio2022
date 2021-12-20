@@ -12,7 +12,7 @@ const Hero = () => {
                 I’m a <div className="heroAnimation" onMouseEnter={() => cursorChangeHandler("hovered")}
             onMouseLeave={() => cursorChangeHandler("")}><div className="static">Frontend Developer</div><div className="dynamic"><p>Frontend Developer</p></div></div> and creative coder based in Stockholm.
                 I’m a current <div className="heroAnimation" onMouseEnter={() => cursorChangeHandler("hovered")}
-            onMouseLeave={() => cursorChangeHandler("")}><div className="static">Hyper Island student</div><div className="dynamic"><p>Hyper Island student</p></div></div> with some freelance experience and a former <div className="heroAnimation" onMouseEnter={() => cursorChangeHandler("hovered")}
+            onMouseLeave={() => cursorChangeHandler("")}><div className="static">Hyper Island student</div><div className="dynamic"><p>Hyper Island student</p></div></div> with freelance experience and a former <div className="heroAnimation" onMouseEnter={() => cursorChangeHandler("hovered")}
             onMouseLeave={() => cursorChangeHandler("")}><span className="static">Project Manager</span><span className="dynamic"><p>Project Manager</p></span></div> in the fields of civil engineering and architecture.</p>
                 </div>
         </div>
