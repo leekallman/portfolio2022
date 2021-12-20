@@ -1038,7 +1038,7 @@ pre tt:after {
 }
 .heroHeading {
   font-size: 16vh;
-  line-height: 1.2;
+  line-height: 1;
   margin-top: 2vh;
   text-transform: uppercase;
 }
@@ -1065,7 +1065,7 @@ pre tt:after {
 
 .profileImg {
   grid-column: 1;
-  margin: 1vh 2vh;
+  margin: 1vh 0;
 }
 .projectsMenu {
   width: 100vw;
@@ -1090,7 +1090,7 @@ pre tt:after {
 .student h5,
 .contact h5 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .student button,
 .personal button {
@@ -1280,80 +1280,67 @@ pre tt:after {
 .dot.hovered {
   display: none;
 }
-
-@media only screen and (min-width: 450px) {
-  .heroHeading {
-    font-size: 20vh;
-    line-height: 1;
-  }
-  .heroDescription {
-    font-size: 5.5vh;
-  }
-  .about {
-    padding: 0 2vh;
-    grid-template-columns: repeat(12, 1fr);
-  }
-  .profileImg {
-    grid-column: 2/5;
-    height: 20vh;
-  }
-  .aboutText {
-    font-size: 1rem;
-    grid-column: 5/13;
-  }
-  .personal h5,
-  .student h5,
-  .contact h5 {
-    font-size: 2.4rem;
-  }
-  .cvText {
-    margin: 0 40vh;
-  }
-  .cvImg {
-    margin-top: 3vh;
-    margin-right: 3vh;
-  }
-  .modalTitle {
-    font-size: 2rem;
-  }
-  .modalLinksRow {
-    margin-bottom: 2vh !important;
-  }
-
-  .closeButton {
-    width: 3vh;
-  }
-}
-@media only screen and (min-width: 450px) and (max-width: 540px) {
-  .personal h5,
-  .student h5,
-  .contact h5 {
-    font-size: 1.7rem;
-  }
-  .cvImg {
-    margin-top: 1vh;
-    margin-right: 2vh;
+@media only screen and (max-width: 600px) {
+  .dot,
+  .dot.hovered,
+  .ring,
+  .ring.hovered {
+    display: none;
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (min-width: 360px) {
   .personal h5,
   .student h5,
   .contact h5 {
     font-size: 1.2rem;
   }
 }
-@media only screen and (max-width: 320px) {
+
+@media only screen and (min-width: 450px) {
   .personal h5,
   .student h5,
   .contact h5 {
-    font-size: 0.9rem;
+    font-size: 1.5rem;
   }
-  .projectsHeading,
-  .contactscHeading {
-    font-size: 0.5rem;
+  .cvImg {
+    margin-top: 1vh;
+    margin-right: 2vh;
+  }
+  .profileImg {
+    max-width: 60%;
   }
 }
+@media only screen and (min-width: 600px) {
+  .personal h5,
+  .student h5,
+  .contact h5 {
+    font-size: 1.8rem;
+  }
+  .heroHeading {
+    font-size: 22vh;
+  }
+  .heroDescription {
+    font-size: 6vh;
+  }
+  .profileImg {
+    max-width: 20%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .personal h5,
+  .student h5,
+  .contact h5 {
+    font-size: 1.8rem;
+  }
+  .heroHeading {
+    font-size: 25vh;
+  }
+  .heroDescription {
+    font-size: 6vh;
+  }
+}
+
 @media only screen and (min-width: 860px) {
   .aboutText {
     font-size: 2vw;
@@ -1373,7 +1360,6 @@ pre tt:after {
     margin-left: 2.5vh;
     padding-bottom: 1vh;
   }
-
   /* image */
   .modal .fade-in-section:nth-child(2) {
     grid-row: 2/3;
