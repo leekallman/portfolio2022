@@ -20,10 +20,9 @@ const Cv = ({ FadeInSection }) => {
             return () => observer.unobserve(lineRef.current)
         }, []);
         return (
-            <div
-                className={`line ${isVisible ? 'is-visible' : ''}`}
-                ref={lineRef}
-            >
+            <div>
+                <div className={`line ${isVisible ? 'is-visible' : ''}`}
+                    ref={lineRef}></div>
             </div>
         );
     }

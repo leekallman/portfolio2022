@@ -1002,14 +1002,10 @@ pre tt:after {
 #parent3:hover #child3:last-child span,
 #parent11:hover #child11:last-child span,
 #parent12:hover #child12:last-child span,
-#parentLinkedin:hover #childLinkedin:first-child span,
-#parentEmail:hover #childEmail:first-child span {
+#parentLinkedin:hover #childLinkedin:last-child span,
+#parentEmail:hover #childEmail:last-child span {
   transform: translate3d(0, 0, 0);
 }
-/* #parentLinkedin:hover #childLinkedin:first-child span,
-#parentEmail:hover #childEmail:first-child span {
-  transition: color 0.5s ease-in;
-} */
 
 .line.is-visible {
   display: block;

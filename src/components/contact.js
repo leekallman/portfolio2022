@@ -32,14 +32,14 @@ const Contact = () => {
             <div style={{ margin: `0 auto`}}>
                 <h2 className="contactscHeading">Contact</h2>
                 <ul style={{listStyle:`none`, marginLeft: `0`}}>
-                    <li>
-                    <a href="https://linkedin.com/in/lisaleekallman" target="_blank"
+                    <li >
+                    <a id="parentLinkedin" href="https://linkedin.com/in/lisaleekallman" target="_blank"
                         style={{
                             color: `var(--black)`,
                             textDecoration: `none`,
                             textTransform: `uppercase`,
                             display: `inline-block`
-                        }} id="parentLinkedin"
+                        }} 
                         onMouseEnter={() => cursorChangeHandler("hovered")}
             onMouseLeave={() => cursorChangeHandler("")}>
                         <h5 id="childLinkedin">LinkedIn</h5>
