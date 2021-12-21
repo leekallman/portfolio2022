@@ -1247,7 +1247,7 @@ pre tt:after {
     display: none;
   }
   .heroHeading {
-    font-size: 40vw;
+    font-size: 34vw;
   }
   .heroDescription {
     font-size: 8vw;
@@ -1262,19 +1262,19 @@ pre tt:after {
   }
   .projectsHeading,
   .contactscHeading {
-    font-size: 0.7rem;
+    font-size: 6vw;
   }
   .personal h5,
   .student h5,
   .contact h5 {
-    font-size: 1.1rem;
+    font-size: 15vw;
   }
   .cv h3 {
-    font-size: 0.7rem;
+    font-size: 4vw;
     margin-bottom: 0;
   }
   .cv h4 {
-    font-size: 1.4rem;
+    font-size: 9vw;
   }
   .cvImg {
     max-width: 15vw;
@@ -1315,17 +1315,8 @@ pre tt:after {
   }
 }
 
-@media screen and (min-device-width: 360px) {
-  .personal h5,
-  .student h5,
-  .contact h5 {
-    font-size: 7vw;
-  }
-}
-
 @media screen and (min-device-width: 450px) {
   .heroHeading {
-    font-size: 7rem;
     margin-bottom: 30vh;
   }
   .personal h5,
@@ -1351,12 +1342,13 @@ pre tt:after {
   .ring.hovered {
     display: none;
   }
-  .heroDescription {
-    font-size: 8vw;
-  }
   .heroHeading {
     margin-bottom: 4vh;
   }
+  .heroDescription {
+    font-size: 8vw;
+  }
+
   .cv h4 {
     font-size: 1.5rem;
   }
