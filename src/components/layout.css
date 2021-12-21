@@ -1075,14 +1075,12 @@ pre tt:after {
   transform: translateY(-100%);
 }
 .heroHeading {
-  font-size: 15rem;
   line-height: 1;
   margin-top: 2vh;
   text-transform: uppercase;
 }
 .heroDescription {
   margin-top: 2vh;
-  font-size: 1.7rem;
   line-height: 1;
 }
 .about {
@@ -1115,7 +1113,11 @@ pre tt:after {
 .contactscHeading {
   text-transform: uppercase;
 }
-
+.personal h5,
+.student h5,
+.contact h5 {
+  margin: 0;
+}
 .student button,
 .personal button {
   padding: 0;
@@ -1273,15 +1275,14 @@ pre tt:after {
   .personal h5,
   .student h5,
   .contact h5 {
-    margin: 0;
     font-size: 1.1rem;
   }
   .cv h3 {
-    font-size: 1rem;
+    font-size: 0.7rem;
     margin-bottom: 0;
   }
   .cv h4 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .cvImg {
     max-width: 15vw;
@@ -1331,6 +1332,10 @@ pre tt:after {
 }
 
 @media screen and (min-device-width: 450px) {
+  .heroHeading {
+    font-size: 7rem;
+    margin-bottom: 30vh;
+  }
   .personal h5,
   .student h5,
   .contact h5 {
@@ -1341,42 +1346,10 @@ pre tt:after {
     margin-right: 2vh;
   }
   .profileImg {
-    max-width: 60%;
+    max-width: 40%;
   }
 }
-@media screen and (min-width: 600px) {
-  .hero {
-    height: 100vh;
-  }
-  .personal h5,
-  .student h5,
-  .contact h5 {
-    font-size: 1.8rem;
-  }
-  .heroHeading {
-    font-size: 22vh;
-  }
-  .heroDescription {
-    font-size: 6vh;
-  }
-  .profileImg {
-    max-width: 20%;
-  }
-}
-@media only screen and (device-width: 768px) {
-  /* default iPad screens */
-  .personal h5,
-  .student h5,
-  .contact h5 {
-    font-size: 1.8rem;
-  }
-  .heroHeading {
-    font-size: 25vh;
-  }
-  .heroDescription {
-    font-size: 6vh;
-  }
-}
+
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* For portrait layouts only */
@@ -1386,9 +1359,56 @@ pre tt:after {
   .ring.hovered {
     display: none;
   }
+  .heroDescription {
+    font-size: 8vw;
+  }
+  .heroHeading {
+    margin-bottom: 4vh;
+  }
+  .cv h4 {
+    font-size: 1.5rem;
+  }
+  .cvImg {
+    max-width: 15vw;
+  }
+  .projectsHeading,
+  .contactscHeading {
+    font-size: 3vw;
+  }
+  .personal h5,
+  .student h5,
+  .contact h5 {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-device-width: 600px) {
+  .heroHeading {
+    margin-bottom: 20vh;
+  }
+  .heroDescription {
+    font-size: 6vw;
+  }
+}
+@media only screen and (min-device-width: 768px) {
+  /* default iPad screens */
+  .personal h5,
+  .student h5,
+  .contact h5 {
+    font-size: 2.5rem;
+  }
+  .heroHeading {
+    font-size: 23vh;
+    margin-bottom: 0;
+  }
+  .heroDescription {
+    font-size: 6vh;
+  }
+  .profileImg {
+    max-width: 40%;
+  }
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 481px) and (orientation: landscape) {
   /* For landscape layouts only */
   .dot,
   .dot.hovered,
@@ -1396,12 +1416,6 @@ pre tt:after {
   .ring.hovered {
     display: none;
   }
-}
-
-@media screen and (min-width: 860px) {
-  /* .aboutText {
-    font-size: 2vw;
-  } */
   .modal {
     grid-template-columns: repeat(auto, 1fr);
     grid-template-rows: repeat(auto, 1fr);
@@ -1433,7 +1447,6 @@ pre tt:after {
   .modalHeading {
     margin: 0 !important;
   }
-
   /* modalText */
   .modal .fade-in-section:nth-child(4) {
     grid-row: 2/3;
@@ -1442,7 +1455,6 @@ pre tt:after {
   .modalDescription {
     font-size: 0.8rem;
   }
-
   /* modalLinks */
   .modal .fade-in-section:nth-child(5) {
     grid-row: 3;
@@ -1460,43 +1472,57 @@ pre tt:after {
     bottom: 2vh;
     width: 12vh;
   }
-  .personal h5,
-  .student h5,
-  .contact h5 {
-    font-size: 2.8rem;
+  .heroHeading {
+    font-size: 23vw;
+    margin-bottom: 5vw;
   }
-  .about {
-    margin: 10vh auto;
-  }
-  .projectsHeading,
-  .contactscHeading {
-    font-size: 1.8vw;
-  }
-  .profileImg {
-    height: 20vw;
-  }
-}
-/* @media screen and (min-width: 860px) and (max-height: 800px) {
   .heroDescription {
-    margin-top: 16vh;
-    font-size: 5vw;
-  }
-}
-@media screen and (min-width: 1024px) {
-  .cvText {
-    margin: 0 40vh;
-  }
-  .cvImg {
-    margin-top: 5vh;
-    margin-right: 5vh;
+    font-size: 6vw;
   }
   .personal h5,
   .student h5,
   .contact h5 {
     font-size: 7vw;
   }
-} */
-@media screen and (min-width: 1024px) {
+  .about {
+    margin: 20vh auto 5vh auto;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .profileImg {
+    grid-column: 2/4;
+    max-width: 100%;
+    margin-right: 2vh;
+    max-height: 30vw;
+  }
+  .aboutText {
+    grid-column: 4/8;
+  }
+  .projectsHeading,
+  .contactscHeading {
+    font-size: 1.8vw;
+  }
+  .cv {
+    margin-left: 20vw;
+  }
+  .cvImg {
+    margin: 3vh 3vh;
+    max-width: 10vw;
+  }
+  .footer {
+    font-size: 0.8rem;
+  }
+}
+@media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+  .heroHeading {
+    font-size: 20vw;
+    margin-bottom: 8vw;
+  }
+  .heroDescription {
+    font-size: 5vw;
+  }
   .modalDescription {
     font-size: 1rem;
   }
@@ -1507,8 +1533,7 @@ pre tt:after {
     border-radius: 50px;
   }
 }
-
-@media screen and (min-width: 2000px) {
+@media only screen and (min-device-width: 2000px) and (orientation: landscape) {
   .modalDescription {
     font-size: 2rem;
   }
@@ -1523,5 +1548,11 @@ pre tt:after {
     border: 3px solid;
     padding: 20px 60px;
     border-radius: 50px;
+  }
+  .aboutText {
+    font-size: 2vw;
+  }
+  .footer {
+    font-size: 1.5vw;
   }
 }
