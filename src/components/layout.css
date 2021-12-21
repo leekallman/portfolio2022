@@ -1033,14 +1033,14 @@ pre tt:after {
   padding: 0 2vh;
 }
 .heroHeading {
-  font-size: 16vh;
+  font-size: 13vh;
   line-height: 1;
   margin-top: 2vh;
   text-transform: uppercase;
 }
 .heroDescription {
   margin-top: 2vh;
-  font-size: 4vh;
+  font-size: 3.5vh;
   line-height: 1;
 }
 .about {
@@ -1052,7 +1052,7 @@ pre tt:after {
 .aboutText {
   margin: 0 auto 10vh auto;
   line-height: 1.3;
-  font-size: 1rem;
+  font-size: 1.5rem;
   grid-column: 1;
 }
 .aboutText > div {
@@ -1086,7 +1086,7 @@ pre tt:after {
 .student h5,
 .contact h5 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .student button,
 .personal button {
@@ -1101,11 +1101,11 @@ pre tt:after {
 }
 
 .cv h3 {
-  font-size: 0.7rem;
+  font-size: 1rem;
   margin-bottom: 0;
 }
 .cv h4 {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 .cvImg {
   float: right;
@@ -1117,7 +1117,7 @@ pre tt:after {
 
 .footer {
   padding: 0.5vh 2vh;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 @keyframes animate-cv {
