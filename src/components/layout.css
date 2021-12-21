@@ -1086,7 +1086,6 @@ pre tt:after {
 .about {
   margin: 5vh auto;
   padding: 0 2vh;
-  display: grid;
 }
 .aboutText {
   margin: 0 auto 10vh auto;
@@ -1095,10 +1094,7 @@ pre tt:after {
 .aboutText > div {
   display: inline;
 }
-/* .profileImg {
-  grid-column: 1;
-  margin: 1vh 0;
-} */
+
 .projectsMenu {
   width: 100vw;
 }
@@ -1251,22 +1247,18 @@ pre tt:after {
     display: none;
   }
   .heroHeading {
-    font-size: 5rem;
+    font-size: 40vw;
   }
   .heroDescription {
-    font-size: 1.5rem;
-  }
-  .about {
-    grid-template-columns: repeat(1, 1fr);
+    font-size: 8vw;
   }
   .aboutText {
     line-height: 1;
-    font-size: 1.3rem;
-    grid-column: 1;
+    font-size: 5vw;
   }
   .profileImg {
-    grid-column: 1;
     margin: 1vh 0;
+    max-width: 60%;
   }
   .projectsHeading,
   .contactscHeading {
@@ -1327,7 +1319,7 @@ pre tt:after {
   .personal h5,
   .student h5,
   .contact h5 {
-    font-size: 1.3rem;
+    font-size: 7vw;
   }
 }
 
@@ -1339,7 +1331,7 @@ pre tt:after {
   .personal h5,
   .student h5,
   .contact h5 {
-    font-size: 1.5rem;
+    font-size: 8vw;
   }
   .cvImg {
     margin-top: 1vh;
