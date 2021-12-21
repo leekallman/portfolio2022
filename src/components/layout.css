@@ -623,7 +623,7 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   html {
     font-size: 100%;
   }
@@ -1033,14 +1033,14 @@ pre tt:after {
   padding: 0 2vh;
 }
 .heroHeading {
-  font-size: 5rem;
+  font-size: 15rem;
   line-height: 1;
   margin-top: 2vh;
   text-transform: uppercase;
 }
 .heroDescription {
   margin-top: 2vh;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1;
 }
 .about {
@@ -1276,7 +1276,7 @@ pre tt:after {
 .dot.hovered {
   display: none;
 }
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .dot,
   .dot.hovered,
   .ring,
@@ -1285,7 +1285,7 @@ pre tt:after {
   }
 }
 
-@media only screen and (min-width: 360px) {
+@media screen and (min-width: 360px) {
   .personal h5,
   .student h5,
   .contact h5 {
@@ -1293,7 +1293,7 @@ pre tt:after {
   }
 }
 
-@media only screen and (min-width: 450px) {
+@media screen and (min-width: 450px) {
   .personal h5,
   .student h5,
   .contact h5 {
@@ -1307,7 +1307,7 @@ pre tt:after {
     max-width: 60%;
   }
 }
-@media only screen and (min-width: 600px) {
+@media screen and (min-width: 600px) {
   .personal h5,
   .student h5,
   .contact h5 {
@@ -1323,7 +1323,7 @@ pre tt:after {
     max-width: 20%;
   }
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .personal h5,
   .student h5,
   .contact h5 {
@@ -1337,7 +1337,7 @@ pre tt:after {
   }
 }
 
-@media only screen and (min-width: 860px) {
+@media screen and (min-width: 860px) {
   .aboutText {
     font-size: 2vw;
   }
@@ -1415,13 +1415,13 @@ pre tt:after {
     height: 20vw;
   }
 }
-@media only screen and (min-width: 860px) and (max-height: 800px) {
+@media screen and (min-width: 860px) and (max-height: 800px) {
   .heroDescription {
     margin-top: 16vh;
     font-size: 5vw;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .cvText {
     margin: 0 40vh;
   }
@@ -1435,7 +1435,7 @@ pre tt:after {
     font-size: 7vw;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
   .modalDescription {
     font-size: 1rem;
   }
@@ -1447,7 +1447,7 @@ pre tt:after {
   }
 }
 
-@media only screen and (min-width: 2000px) {
+@media screen and (min-width: 2000px) {
   .modalDescription {
     font-size: 2rem;
   }
