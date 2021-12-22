@@ -1267,14 +1267,14 @@ pre tt:after {
   .personal h5,
   .student h5,
   .contact h5 {
-    font-size: 10vw;
+    font-size: 7vw;
   }
   .cv h3 {
     font-size: 3vw;
     margin-bottom: 0;
   }
   .cv h4 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .cvImg {
     max-width: 15vw;
@@ -1394,12 +1394,6 @@ pre tt:after {
 
 @media only screen and (min-device-width: 481px) and (orientation: landscape) {
   /* For landscape layouts only */
-  .dot,
-  .dot.hovered,
-  .ring,
-  .ring.hovered {
-    display: none;
-  }
   .modal {
     grid-template-columns: repeat(auto, 1fr);
     grid-template-rows: repeat(auto, 1fr);
