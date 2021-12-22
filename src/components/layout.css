@@ -1485,11 +1485,19 @@ pre tt:after {
 }
 @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
   .heroHeading {
-    font-size: 20vw;
+    font-size: 17vw;
     margin-bottom: 8vw;
   }
   .heroDescription {
-    font-size: 5vw;
+    font-size: 4vw;
+  }
+  .aboutText {
+    grid-column: 4/7;
+  }
+  .profileImg {
+    max-height: 20vw;
+    width: 20vw;
+    margin-left: 7vw;
   }
   .modalDescription {
     font-size: 1rem;
