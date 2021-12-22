@@ -8,6 +8,15 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Helvetica Now Text ";
+  src: local("Helvetica Now Text  Light"), local("Helvetica-Now-Text--Light"),
+    url("../fonts/HelveticaNowText-Light.woff2") format("woff2"),
+    url("../fonts/HelveticaNowText-Light.woff") format("woff"),
+    url("../fonts/HelveticaNowText-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
 :root {
   --black: #1c1b1b;
   --grey: #d3d0ce;
@@ -18,7 +27,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em Helvetica Now Text, serif, sans-serif;
+  font: 112.5%/1.45em Helvetica Now Text, Roboto, sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -1262,12 +1271,12 @@ pre tt:after {
   }
   .projectsHeading,
   .contactscHeading {
-    font-size: 4vw;
+    font-size: 3vw;
   }
   .personal h5,
   .student h5,
   .contact h5 {
-    font-size: 7vw;
+    font-size: 6vw;
   }
   .cv h3 {
     font-size: 3vw;
@@ -1314,26 +1323,7 @@ pre tt:after {
     width: 5vh;
   }
 }
-/* 
-@media screen and (min-device-width: 450px) {
-  .heroHeading {
-    margin-bottom: 30vh;
-  }
-  .personal h5,
-  .student h5,
-  .contact h5 {
-    font-size: 8vw;
-  }
-  .cvImg {
-    margin-top: 1vh;
-    margin-right: 2vh;
-  }
-  .profileImg {
-    max-width: 40%;
-  }
-} */
 
-/* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
   /* For portrait layouts only */
   .dot,
