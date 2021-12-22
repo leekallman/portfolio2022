@@ -1250,10 +1250,10 @@ pre tt:after {
     font-size: 34vw;
   }
   .heroDescription {
-    font-size: 8vw;
+    font-size: 7vw;
   }
   .aboutText {
-    line-height: 1;
+    line-height: 1.1;
     font-size: 5vw;
   }
   .profileImg {
@@ -1262,19 +1262,19 @@ pre tt:after {
   }
   .projectsHeading,
   .contactscHeading {
-    font-size: 6vw;
+    font-size: 4vw;
   }
   .personal h5,
   .student h5,
   .contact h5 {
-    font-size: 15vw;
+    font-size: 10vw;
   }
   .cv h3 {
-    font-size: 4vw;
+    font-size: 3vw;
     margin-bottom: 0;
   }
   .cv h4 {
-    font-size: 9vw;
+    font-size: 7vw;
   }
   .cvImg {
     max-width: 15vw;
@@ -1283,8 +1283,8 @@ pre tt:after {
     font-size: 1rem;
   }
   .modalTitle {
-    font-size: 7vh;
-    line-height: 1.2;
+    font-size: 8vh;
+    line-height: 1;
     margin-top: 2vh;
     padding-bottom: 4vh;
   }
@@ -1293,28 +1293,28 @@ pre tt:after {
   }
   .modalHeading {
     grid-row: 3;
-    font-size: 1.2rem;
-    margin: 2vh auto 3vh auto !important;
+    font-size: 4vw;
+    margin: 0 !important;
   }
   .modalDescription {
-    font-size: 1rem;
+    font-size: 3vw;
     line-height: 1.1;
   }
   .modalPeriod {
-    font-size: 0.6rem;
+    font-size: 2.5vw;
   }
   .modalLinks a {
-    border: 1px solid var(--red);
-    border-radius: 30px;
-    padding: 5px 20px;
-    font-size: 0.6rem;
+    border: 2px solid var(--red);
+    border-radius: 50px;
+    padding: 10px 25px;
+    font-size: 2.5vw;
     margin-right: 1vh;
   }
   .closeButton {
     width: 5vh;
   }
 }
-
+/* 
 @media screen and (min-device-width: 450px) {
   .heroHeading {
     margin-bottom: 30vh;
@@ -1331,7 +1331,7 @@ pre tt:after {
   .profileImg {
     max-width: 40%;
   }
-}
+} */
 
 /* different techniques for iPad screening */
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: portrait) {
