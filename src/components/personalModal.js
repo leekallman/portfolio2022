@@ -5,7 +5,7 @@ import { useContext } from "react";
 import { MouseContext } from "../context/mouse-context";
 
 const PersonalModal = ({ node, closePersonal, togglerPersonal, FadeInSection }) => {
-    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+    const { cursorChangeHandler } = useContext(MouseContext);
     return (
         <div style={{
             height: `100vh`,

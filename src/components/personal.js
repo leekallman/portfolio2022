@@ -5,7 +5,7 @@ import { MouseContext } from "../context/mouse-context";
 
 
 const Personal = ({ node, FadeInSection }) => {
-    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+    const { cursorChangeHandler } = useContext(MouseContext);
     useEffect(() => {
         const str = document.getElementById('child' + node.index)
 

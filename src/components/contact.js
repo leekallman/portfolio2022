@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { MouseContext } from "../context/mouse-context";
 
 const Contact = () => {
-    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+    const { cursorChangeHandler } = useContext(MouseContext);
     useEffect(() => {
 
         const linkedin = document.getElementById('childLinkedin');

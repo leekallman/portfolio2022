@@ -4,7 +4,7 @@ import { useContext } from "react";
 import { MouseContext } from "../context/mouse-context";
 
 const Cv = ({ FadeInSection }) => {
-    const { cursorType, cursorChangeHandler } = useContext(MouseContext);
+    const { cursorChangeHandler } = useContext(MouseContext);
     function GrowLine(props) {
         const [isVisible, setVisible] = useState(false);
         const lineRef = useRef();
