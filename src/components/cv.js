@@ -20,10 +20,8 @@ const Cv = ({ FadeInSection }) => {
             return () => observer.unobserve(lineRef.current)
         }, []);
         return (
-            <div>
                 <div className={`line ${isVisible ? 'is-visible' : ''}`}
                     ref={lineRef}></div>
-            </div>
         );
     }
 
@@ -46,7 +44,6 @@ const Cv = ({ FadeInSection }) => {
                 </a>
                 <div className="cvText">
                     <GrowLine></GrowLine>
-               
                     <div className="employments">
                         <div><FadeInSection>
                                 <h3>2022- | Klingit</h3>

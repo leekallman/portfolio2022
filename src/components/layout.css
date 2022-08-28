@@ -1020,7 +1020,7 @@ pre tt:after {
   display: block;
   position: absolute;
   top: 00%;
-  left: 3vh;
+  left: 2vh;
   border-left: 2px solid var(--grey);
   margin: 1vh 0 0 0;
   text-align: center;
@@ -1148,6 +1148,10 @@ pre tt:after {
   margin-top: 1vh;
   z-index: 5;
 }
+.cvText{
+  position: relative;
+  margin-top: 4vh;
+}
 
 .footer {
   padding: 0.5vh 2vh;
@@ -1203,16 +1207,17 @@ pre tt:after {
 }
 .employments {
   position: relative;
-  margin-left: 8vh;
+  margin-left: 5vh;
 }
+
 .employments:nth-child(2){
-margin-top: 10vh;
+margin-top: 5vh;
 }
 
 .employments:nth-of-type(4){
 padding-top: 0;
-
 }
+
 .employments .fade-in-section:last-of-type h4 {
 margin-bottom: 0;
 }
@@ -1295,6 +1300,7 @@ margin-bottom: 0;
   .contact h5 {
     font-size: 6vw;
   }
+
   .cv h3 {
     font-size: 3vw;
     margin-bottom: 0;
@@ -1379,6 +1385,12 @@ margin-bottom: 0;
   }
   .heroDescription {
     font-size: 6vw;
+  }
+  .employments {
+    margin-left: 7vh;
+  }
+  .line.is-visible {
+    left: 3vh;
   }
 }
 @media only screen and (min-device-width: 768px) {
@@ -1492,11 +1504,6 @@ margin-bottom: 0;
   }
   .cv {
     margin-left: 20vw;
-    
-  }
-  .cvText{
-    position: relative;
-    margin-top: 4vh;
   }
   .cvImg {
     margin: 3vh 3vh;
@@ -1505,6 +1512,11 @@ margin-bottom: 0;
   .footer {
     font-size: 0.8rem;
   }
+  .employments:nth-child(2){
+  margin-top: 10vh;
+  }
+  
+
 }
 @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
   .heroHeading {
