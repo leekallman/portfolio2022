@@ -18,79 +18,116 @@ const About = ({ FadeInSection }) => {
             />
             <div className="aboutText">
                 <FadeInSection >
-                    <span>At Hyper Island, I have had </span>
+                    <span>I’m a multi-disciplinary </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>the opportunity to learn from </span>
+                    <span>designer and developer with a great </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>industry professionals, gain </span>
+                    <span>interest in innovation, sustainability and </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>relevant knowledge and experience </span>
+                    <span>digital development. I have a background </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>of the latest technologies and </span>
+                    <span>in civil engineering and sustainability along </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>work in agile development teams </span>
+                    <span>with several years of experience </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>for real clients. I have acquired </span>
+                    <span>as a project manager in architecture </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>basic knowledge in HTML, CSS, </span>
+                    <span>and property development. I was </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>JavaScript, React and Node.js, </span>
+                    <span>drawn to tech and digital design </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>been introduced to UX/UI-design, </span>
+                    <span>because of my curiosity for design </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>accessibility, working with </span>
+                    <span>and code and the urge to </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>databases, APIs and TDD etc. </span>
+                    <span>use my creativity to leave a </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>In addition, I have taken every </span>
+                    <span>positive impact, and after </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>chance to challenge myself </span>
+                    <span>several years in the construction </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>and my creative ability by </span>
+                    <span>and design sector I jumped on </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>trying new frameworks and </span>
+                    <span>the opportunity to deepen my </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>libraries to add exciting </span>
-                </FadeInSection>
-                <FadeInSection >
-                    <span>elements in my design. </span>
+                    <span>new code and design skills at Hyper Island. </span>
                 </FadeInSection>
                 <br />
                 <br />
                 <FadeInSection >
-                    <span>Parallel with my studies, </span>
+                    <span>At Hyper I gained, </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>I have worked on side projects </span>
+                    <span>except for design and frontend fundamentals, </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>such as being involved in starting </span>
+                    <span>useful tools to craft my own path, </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>a magazine and arranging community </span>
+                    <span>and strengthened my entrepreneurial spirit </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>markets in three of Stockholm's </span>
+                    <span>of self leadership and belief </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>southern suburbs. </span>
+                    <span>in team development as a success factor </span>
                 </FadeInSection>
+                <FadeInSection >
+                    <span>for thriving teams and sustainable growth. </span>
+                </FadeInSection>
+                <br />
+                <br />
+                <FadeInSection >
+                    <span>Since 2019, I have been freelancing </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>and actively been striving to </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>develop as a designer within an ever evolving </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>creative field. I have worked on side </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>projects such as being involved </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>in starting a paper print magazine, </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>supporting startups with design services, </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>and been working for the local community </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>by being part of creating a infectiously </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>growing community market tradition </span>
+                </FadeInSection>
+                <FadeInSection >
+                    <span>in four of Stockholm's southern suburbs. </span>
+                </FadeInSection>
+                <br />
+                <br />
                 <FadeInSection >
                     <span>Knowing that what I do will leave </span>
                 </FadeInSection>
@@ -98,22 +135,10 @@ const About = ({ FadeInSection }) => {
                     <span>a positive impact on people and </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>the future is a strong motivating </span>
+                    <span>the future is a strong motivating factor </span>
                 </FadeInSection>
                 <FadeInSection >
-                    <span>factor for me and is something I </span>
-                </FadeInSection>
-                <FadeInSection >
-                    <span>intend to continue doing. </span>
-                </FadeInSection>
-                <FadeInSection >
-                    <span>From Hyper I bring with me valuable </span>
-                </FadeInSection>
-                <FadeInSection >
-                    <span>insights and tools to foster team </span>
-                </FadeInSection>
-                <FadeInSection >
-                    <span>development and self-leadership.</span>
+                    <span>for me and is something I intend to continue doing.</span>
                 </FadeInSection>
             </div>
         </div >
