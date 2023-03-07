@@ -44,6 +44,10 @@ const PersonalModal = ({ node, closePersonal, togglerPersonal, FadeInSection }) 
                         onMouseLeave={() => cursorChangeHandler("")}>
                         github
                     </a>
+                    <a href={node.figma} aria-label="link to figma" onMouseEnter={() => cursorChangeHandler("hovered")}
+                        onMouseLeave={() => cursorChangeHandler("")}>
+                        figma
+                    </a>
                 </div>
             </FadeInSection>
             <FadeInSection>
