@@ -28,6 +28,7 @@ const Projects = ({ FadeInSection }) => {
                         period
                         github
                         type
+                        figma
                     }
                 }
             }
