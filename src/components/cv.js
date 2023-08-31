@@ -31,7 +31,7 @@ const Cv = ({ FadeInSection }) => {
             padding: `0 2vh`,
         }}>
             <div className="cv">
-                <a href="https://drive.google.com/file/d/1IDBS1gqfz_Q0aZDGTNWHdOr9hji18pYA/view?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/1j-Zdu162UA1-CNDCR-GjSDzjZLaNQ0PF/view?usp=drive_link" target="_blank">
                     <StaticImage
                         src="../images/cv.svg"
                         quality={95}
