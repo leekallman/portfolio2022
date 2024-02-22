@@ -695,6 +695,7 @@ pre tt:after {
 #child3:last-child,
 #child11:last-child,
 #child12:last-child,
+#child13:last-child,
 #childLinkedin:last-child,
 #childEmail:last-child {
   position: absolute;
